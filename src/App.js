@@ -1,20 +1,21 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { Container } from '@mui/system';
 // import { styled } from '@mui/material';
 
 function App() {
 
   const styles = {
     myAppBar: {
-      backgroundColor: 'black'
+      backgroundColor: 'white',
+      color: 'black',
+      textAlign: 'left',
     },
     heroBox: {
-      backgroundImage: `url('https://cdn.wallpapersafari.com/40/20/Dfa5ZM.jpg')`,
+      backgroundImage: `url('https://cdn.wallpapersafari.com/13/97/OiPluc.jpg')`,
       height: '500px',
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
@@ -23,8 +24,8 @@ function App() {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      fontColor: "#fff",
-      fontSize: "4rem"
+      color: "#fff",
+      fontSize: "5rem"
     }
   }
   
@@ -32,12 +33,14 @@ function App() {
     <div className="App">
       <AppBar position="static" sx={styles.myAppBar}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div"sx={{ flexGrow: 1 }}>
             Manhattan Foodie
           </Typography>
         </Toolbar>
       </AppBar>
-      <Box sx={styles.heroBox}>Hungry in Manhattan</Box>
+      <Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+
+      <Container></Container>
     </div>
   );
 }
