@@ -14,16 +14,16 @@ function App() {
       backgroundColor: 'black'
     },
     heroBox: {
-      backgroundImage: `liniear-gradient.(rgba(0, 0, 0.5), rgba(0, 0, 0.5)), url('https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')`,
+      backgroundImage: `url('https://cdn.wallpapersafari.com/40/20/Dfa5ZM.jpg')`,
       height: '500px',
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
-      positoin:"relative",
+      position:"relative",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      color: "#fff",
+      fontColor: "#fff",
       fontSize: "4rem"
     }
   }
@@ -33,11 +33,11 @@ function App() {
       <AppBar position="static" sx={styles.myAppBar}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Hungry in Manhattan
+            Manhattan Foodie
           </Typography>
         </Toolbar>
       </AppBar>
-      <Box sx={styles.heroBox}>Foodie Blog</Box>
+      <Box sx={styles.heroBox}>Hungry in Manhattan</Box>
     </div>
   );
 }
