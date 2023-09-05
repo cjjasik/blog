@@ -6,19 +6,7 @@ import Restaurants from "./Pages/Restaurants";
 import Attractions from "./Pages/Attractions";
 import Hotels from "./Pages/Hotels";
 import Flights from "./Pages/Flights";
-
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { Container } from '@mui/system';
 import theme from './theme';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 
 function App() {
 
@@ -64,7 +52,7 @@ function App() {
   
   return (
     <div className="App">
-       {/* *************ROUTES************ */}
+{/* *************ROUTES************ */}
       <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />}></Route>

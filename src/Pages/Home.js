@@ -1,18 +1,11 @@
 import React from 'react';
-// Router Imports
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Restaurants from "./Pages/Restaurants";
-import Attractions from "./Pages/Attractions";
-import Hotels from "./Pages/Hotels";
-import Flights from "./Pages/Flights";
+import theme from '../theme';
+import Navbar from '../Components/Navbar';
+// ********** HOME IMPORT **********
 
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/system';
-import theme from './theme';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -23,11 +16,6 @@ import Button from '@mui/material/Button';
 function Home() {
 
   const styles = {
-    myAppBar: {
-      backgroundColor: 'white',
-      color: 'black',
-      textAlign: 'left',
-    },
 
     heroBox: {
       backgroundImage: `url('https://cdn.wallpapersafari.com/13/97/OiPluc.jpg')`,
@@ -64,13 +52,8 @@ function Home() {
   
   return (
     <div className="Home">
-      <AppBar position="static" sx={styles.myAppBar}>
-        <Toolbar>
-          <Typography variant="h6" component="div"sx={{ flexGrow: 1 }}>
-            Manhattan Foodie
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Navbar/>
+{/* ****************************** MAIN TITLE ****************************** */}
       <Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
 
       <Container className={styles.articleContainer} maxWidth="lg">
@@ -79,7 +62,7 @@ function Home() {
         </Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={4}>
-          {/* ****************************** CARD 1 ****************************** */}
+{/* ****************************** CARD 1 ****************************** */}
           <Card className={styles.card} sx={{ maxWidth: 345 }}>
             <CardMedia className={styles.media}
               sx={{ height: 140 }}
@@ -100,7 +83,7 @@ function Home() {
           </Card>          
           </Grid>
 
-          {/* ****************************** CARD 2 ****************************** */}
+{/* ****************************** CARD 2 ****************************** */}
           <Grid item xs={12} sm={6} md={4}>
             <Card className={styles.card} sx={{ maxWidth: 345 }}>
               <CardMedia className={styles.media}
@@ -121,8 +104,7 @@ function Home() {
               </CardActions>
             </Card> 
           </Grid>
-
-          {/* ****************************** CARD 3 ****************************** */}
+{/* ****************************** CARD 3 ****************************** */}
           <Grid item xs={12} sm={6} md={4}>
             <Card className={styles.card} sx={{ maxWidth: 345 }}>
               <CardMedia className={styles.media}
