@@ -182,15 +182,15 @@ function Home() {
             <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
-                image="https://sweeneytoddbroadway.com/wp-content/uploads/2022/12/tw.png"
+                image="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1693001710745-2RPHPHOOR0E12V0KOQ5F/NY_Press+FInal-01.png?format=2500w"
                 title="sweeny-todd"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Josh Groban in Sweeny Todd
+                  Hangawi Korean Festival 2023
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  How the long awaited return of Josh Groban meets the iconic broadway musical
+                  Celebrate the vibrant community spirit of Chuseok at a curated pop-up market showcasing Korean American arts, crafts, culture, and more!
                 </Typography>
               </CardContent>
               <CardActions>
