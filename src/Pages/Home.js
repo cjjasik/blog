@@ -34,12 +34,14 @@ function Home() {
 
     articleContainer: {
       paddingTop: theme.spacing(3),
+      marginBottom: 10
     },
 
     articleTitle: {
-      fontWeight: 800,
+      fontWeight: 400,
       paddingBottom: theme.spacing(3),
-      textAlign: "left"
+      textAlign: "left",
+      marginBottom: 0
     },
 
     card: {
@@ -57,14 +59,15 @@ function Home() {
 {/* ****************************** MAIN TITLE ****************************** */}
       <Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
 
-      <Container className={styles.articleContainer} maxWidth="lg">
-        <Typography className={styles.articleTitle} variant="h4" sx={{ flexGrow: 1 }}>
+{/* ****************************** FEATURED ****************************** */}
+      <Container sx={styles.articleContainer} maxWidth="false">
+        <Typography sx={styles.articleTitle} variant="h4">
             Featured:
         </Typography>
         <Grid container spacing={3}>
 {/* ****************************** CARD 1 ****************************** */}
-          <Grid item xs={12} sm={6} md={4}>
-          <Card className={styles.card} sx={{ maxWidth: 345 }}>
+          <Grid item md={2}>
+          <Card className={styles.card} sx={{ maxWidth: 345, height: 345}}>
             <CardMedia className={styles.media}
               sx={{ height: 140 }}
               image="https://images.squarespace-cdn.com/content/v1/6231ff6bf0d49978468462a8/623bb58f-b406-49d2-95cd-d30f9a9d679e/Screenshot+2022-04-11+at+17.37.38.png"
@@ -85,8 +88,8 @@ function Home() {
           </Grid>
 
 {/* ****************************** CARD 2 ****************************** */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Card className={styles.card} sx={{ maxWidth: 345 }}>
+          <Grid item md={2}>
+            <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
                 image="https://res.cloudinary.com/the-infatuation/image/upload/v1656119082/cms/EmilyS_Rubirosa_002_20_1.jpg"
@@ -106,8 +109,8 @@ function Home() {
             </Card> 
           </Grid>
 {/* ****************************** CARD 3 ****************************** */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Card className={styles.card} sx={{ maxWidth: 345 }}>
+          <Grid item md={2}>
+            <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
                 image="https://images.squarespace-cdn.com/content/v1/547bbc7ee4b010fe66ba7834/1615421670140-Q19SN5983VN99236U5X3/image-asset.jpeg"
@@ -129,8 +132,8 @@ function Home() {
           </Grid>
 
           {/* ****************************** CARD 4 ****************************** */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Card className={styles.card} sx={{ maxWidth: 345 }}>
+          <Grid item md={2}>
+            <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
                 image="https://d1ralsognjng37.cloudfront.net/11148194-5742-4297-9cd9-87e78749b879.webp"
@@ -152,8 +155,31 @@ function Home() {
           </Grid>
 
 {/* ****************************** CARD 5 ****************************** */}
-          <Grid item xs={12} sm={6} md={4}>
-            <Card className={styles.card} sx={{ maxWidth: 345 }}>
+          <Grid item md={2}>
+            <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
+              <CardMedia className={styles.media}
+                sx={{ height: 140 }}
+                image="https://sweeneytoddbroadway.com/wp-content/uploads/2022/12/tw.png"
+                title="sweeny-todd"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Josh Groban in Sweeny Todd
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  How the long awaited return of Josh Groban meets the iconic broadway musical
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+            
+          </Grid>
+
+{/* ****************************** CARD 6 ****************************** */}
+        <Grid item md={2}>
+            <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
                 image="https://sweeneytoddbroadway.com/wp-content/uploads/2022/12/tw.png"

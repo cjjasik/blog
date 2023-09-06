@@ -11,6 +11,10 @@ function Navbar () {
           backgroundColor: 'white',
           color: 'black',
           textAlign: 'left',
+        },
+        navLinks: {
+            marginLeft: '50px',
+            marginRight: '50px',
         }
     }
 
@@ -21,10 +25,10 @@ function Navbar () {
             Manhattan Foodie
           </Typography>
           {/* ****************************** NAV BAR STUFF ****************************** */}
-            <Link href='/restaurants' underline="none" color="inherit"><p className='tab-title'><strong>RESTAURANTS</strong></p></Link>
-            <Link href='/attractions' underline="none" color="inherit"><p className='tab-title'><strong>ATTRACTIONS</strong></p></Link>
-            <Link href='/hotels' underline="none" color="inherit"><p className='tab-title'><strong>HOTELS</strong></p></Link>
-            <Link href='/flights' underline="none" color="inherit"><p className='tab-title'><strong>FLIGHTS</strong></p></Link>
+            <Link href='/restaurants' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title' ><strong>RESTAURANTS</strong></p></Link>
+            <Link href='/attractions' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title'><strong>ATTRACTIONS</strong></p></Link>
+            <Link href='/hotels' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title'><strong>HOTELS</strong></p></Link>
+            <Link href='/flights' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title'><strong>FLIGHTS</strong></p></Link>
         </Toolbar>
       </AppBar>
       
