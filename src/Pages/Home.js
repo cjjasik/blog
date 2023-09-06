@@ -28,11 +28,12 @@ function Home() {
       justifyContent: "center",
       alignItems: "center",
       color: "#fff",
-      fontSize: "5rem"
+      fontSize: "5rem",
+      marginBottom: 3      
     },
 
     articleContainer: {
-      paddingTop: theme.spacing(3)
+      paddingTop: theme.spacing(3),
     },
 
     articleTitle: {
@@ -61,8 +62,8 @@ function Home() {
             Featured:
         </Typography>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} md={4}>
 {/* ****************************** CARD 1 ****************************** */}
+          <Grid item xs={12} sm={6} md={4}>
           <Card className={styles.card} sx={{ maxWidth: 345 }}>
             <CardMedia className={styles.media}
               sx={{ height: 140 }}
@@ -124,6 +125,52 @@ function Home() {
                 <Button size="small">Learn More</Button>
               </CardActions>
             </Card> 
+            
+          </Grid>
+
+          {/* ****************************** CARD 4 ****************************** */}
+          <Grid item xs={12} sm={6} md={4}>
+            <Card className={styles.card} sx={{ maxWidth: 345 }}>
+              <CardMedia className={styles.media}
+                sx={{ height: 140 }}
+                image="https://d1ralsognjng37.cloudfront.net/11148194-5742-4297-9cd9-87e78749b879.webp"
+                title="ny-peeps"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  NY Peeps Kitchen
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  The ultimate Korean Fried Chicken joint
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
+            
+          </Grid>
+
+{/* ****************************** CARD 5 ****************************** */}
+          <Grid item xs={12} sm={6} md={4}>
+            <Card className={styles.card} sx={{ maxWidth: 345 }}>
+              <CardMedia className={styles.media}
+                sx={{ height: 140 }}
+                image="https://sweeneytoddbroadway.com/wp-content/uploads/2022/12/tw.png"
+                title="sweeny-todd"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Josh Groban in Sweeny Todd
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  How the long awaited return of Josh Groban meets the iconic broadway musical
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Learn More</Button>
+              </CardActions>
+            </Card>
             
           </Grid>
             
