@@ -3,10 +3,27 @@ import Link from '@mui/material/Link';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 
 function Navbar () {
     const styles = {
+
+        heroBox: {
+            backgroundImage: `url('https://cdn.wallpapersafari.com/13/97/OiPluc.jpg')`,
+            height: '500px',
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            position:"relative",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#fff",
+            fontSize: "5rem",
+            marginBottom: 3      
+          },
+
         myAppBar: {
           backgroundColor: 'white',
           color: 'black',
@@ -19,6 +36,8 @@ function Navbar () {
     }
 
     return(
+        <>
+
         <AppBar position="static" sx={styles.myAppBar}>
         <Toolbar>
           <Typography variant="h6" component="div"sx={{ flexGrow: 1 }}>
@@ -31,6 +50,10 @@ function Navbar () {
             <Link href='/flights' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title'><strong>FLIGHTS</strong></p></Link>
         </Toolbar>
       </AppBar>
+      {/* ****************************** MAIN TITLE ****************************** */}
+      <Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+    
+        </>
       
     )
 }

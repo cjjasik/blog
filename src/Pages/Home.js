@@ -1,9 +1,7 @@
 import React from 'react';
 import theme from '../theme';
 import Navbar from '../Components/Navbar';
-// ********** HOME IMPORT **********
-
-import Box from '@mui/material/Box';
+// ********** MUI IMPORTS **********
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid';
@@ -13,24 +11,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 
+
 function Home() {
 
   const styles = {
-
-    heroBox: {
-      backgroundImage: `url('https://cdn.wallpapersafari.com/13/97/OiPluc.jpg')`,
-      height: '500px',
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      position:"relative",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "#fff",
-      fontSize: "5rem",
-      marginBottom: 3      
-    },
 
     articleContainer: {
       paddingTop: theme.spacing(3),
@@ -50,14 +34,14 @@ function Home() {
 
     media: {
       height: 240,
-    },
+    }
   }
   
   return (
     <div className="Home">
       <Navbar/>
 {/* ****************************** MAIN TITLE ****************************** */}
-      <Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+      {/* <Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box> */}
 
 {/* ****************************** FEATURED ****************************** */}
       <Container sx={styles.articleContainer} maxWidth="false">
@@ -65,6 +49,8 @@ function Home() {
             Featured:
         </Typography>
         <Grid container spacing={3}>
+
+
 {/* ****************************** CARD 1 ****************************** */}
           <Grid item md={2}>
           <Card className={styles.card} sx={{ maxWidth: 345, height: 345}}>
@@ -131,7 +117,7 @@ function Home() {
             
           </Grid>
 
-          {/* ****************************** CARD 4 ****************************** */}
+{/* ****************************** CARD 4 ****************************** */}
           <Grid item md={2}>
             <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
               <CardMedia className={styles.media}
@@ -164,7 +150,7 @@ function Home() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Josh Groban in Sweeny Todd
+                  Josh Groban's Return to Sweeny Todd
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   How the long awaited return of Josh Groban meets the iconic broadway musical
@@ -199,7 +185,7 @@ function Home() {
             </Card>
             
           </Grid>
-            
+           
         </Grid>
       </Container>
     </div>
