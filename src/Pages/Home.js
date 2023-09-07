@@ -10,11 +10,27 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
 
 function Home() {
 
   const styles = {
+
+    heroBox: {
+      backgroundImage: `url('https://cdn.wallpapersafari.com/13/97/OiPluc.jpg')`,
+      height: '500px',
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      position:"relative",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      color: "#fff",
+      fontSize: "5rem",
+      marginBottom: 3      
+    },
 
     articleContainer: {
       paddingTop: theme.spacing(3),
@@ -40,8 +56,9 @@ function Home() {
   return (
     <div className="Home">
       <Navbar/>
+
 {/* ****************************** MAIN TITLE ****************************** */}
-      {/* <Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box> */}
+<Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
 
 {/* ****************************** FEATURED ****************************** */}
       <Container sx={styles.articleContainer} maxWidth="false">
