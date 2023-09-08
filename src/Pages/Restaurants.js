@@ -46,11 +46,14 @@ function Restaurants () {
         boxOuter: {
             marginLeft: "100px",
             marginRight: "100px",
-            marginBottom: "30px",
+            marginBottom: "50px",
             backgroundColor: '#f5e1e1',
             borderColor: '#ddc0c0',
             borderStyle: 'solid',
-            padding: '20px',
+            paddingBottom: "50px",
+            paddingTop: "20px",
+            paddingRight: '20px',
+            paddingLeft: '20px',
             alignItems: "center",
         },
 
