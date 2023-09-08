@@ -58,7 +58,7 @@ function Home() {
       <Navbar/>
 
 {/* ****************************** MAIN TITLE ****************************** */}
-<Box sx={styles.heroBox}>Hungry  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+<Box sx={styles.heroBox}>HUNGRY  <span style={{color: "darkred", marginLeft: "130px", marginRight: "100px"}}> in</span>  MANHATTAN</Box>
 
 {/* ****************************** FEATURED ****************************** */}
       <Container sx={styles.articleContainer} maxWidth="false">

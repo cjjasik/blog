@@ -6,12 +6,6 @@ import Box from '@mui/material/Box';
 // DIVIDERS
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 
