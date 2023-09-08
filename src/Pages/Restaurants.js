@@ -84,7 +84,7 @@ function Restaurants () {
             <Box sx={styles.heroBox} style={{color: "black"}}>Restaurants  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px", textAlight: "center"}}> in</span>  Manhattan</Box>
 
             <Box sx={styles.boxOuter}>
-                <Typography sx={styles.pageDescription} variant="h4"><strong>“LIFE IS UNCERTAIN. EAT DESSERT <span style={{color: "darkred"}}> FIRST.”</span> – Ernestine Ulmer</strong></Typography>
+                <Typography sx={styles.pageDescription} variant="h4"><strong>“LIFE IS UNCERTAIN. EAT DESSERT <span style={{color: "darkred"}}> FIRST</span>.” – Ernestine Ulmer</strong></Typography>
                 <List
                     sx={{width: '1500', maxWidth: '1700', bgcolor: 'background.paper'}}>
                         <ListItem sx={styles.foodItem}>
