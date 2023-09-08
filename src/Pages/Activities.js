@@ -2,7 +2,7 @@ import * as React from 'react';
 import Navbar from '../Components/Navbar';
 import Box from '@mui/material/Box';
 
-function Attractions () {
+function Activities () {
 
     const styles = {
 
@@ -33,7 +33,7 @@ function Attractions () {
     )
 }
 
-export default Attractions;
+export default Activities;
 
 // ATTRACTIONS HERO IMAGE
 // https://s1.citypass.net/_next/gcms/media/resize=fit:clip,width:1920/resize=fit:crop,height:512/quality=value:85/compress/sdDk8EobTX2a671kw4RI

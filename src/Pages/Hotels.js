@@ -27,7 +27,7 @@ function Hotels () {
         <>
             <Navbar/>
 {/* ****************************** MAIN TITLE ****************************** */}
-<Box sx={styles.heroBox} style={{color: ""}}>Hotels  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+<Box sx={styles.heroBox} style={{color: "black"}}>Hotels  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
             Hotels
         </>
     )

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Restaurants from "./Pages/Restaurants";
-import Attractions from "./Pages/Attractions";
+import Activities from "./Pages/Activities";
 import Hotels from "./Pages/Hotels";
 import Flights from "./Pages/Flights";
 import theme from './theme';
@@ -57,7 +57,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/restaurants" element={<Restaurants />}></Route>
-            <Route path="/attractions" element={<Attractions />}></Route>
+            <Route path="/activities" element={<Activities />}></Route>
             <Route path="/hotels" element={<Hotels />}></Route>
             <Route path="/flights" element={<Flights />}></Route>
         </Routes>
