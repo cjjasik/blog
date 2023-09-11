@@ -11,6 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import Divider from '@mui/material/Divider';
 
 
 function Home() {
@@ -50,6 +51,33 @@ function Home() {
 
     media: {
       height: 240,
+    },
+
+    authorBox: {
+      backgroundImage: `url('https://images.pexels.com/photos/450597/pexels-photo-450597.jpeg?cs=srgb&dl=pexels-lex-photography-450597.jpg&fm=jpg')`,
+      height: '405px',
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      position:"relative",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      color: "#fff",
+      fontSize: "5rem",
+      marginBottom: 7      
+    },
+
+    authorCard: {
+      maxWidth: '100%',
+    },
+
+    authorText: {
+      marginTop: "10px"
+    },
+
+    authorTitle: {
+      textAlign: "center"
     }
   }
   
@@ -125,7 +153,7 @@ function Home() {
                   Grace Street Coffee & Desserts
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  The best cheesecake in New York City
+                  A hidden gem in Koreatown has the best cheesecake in New York City!
                 </Typography>
               </CardContent>
               <CardActions>
@@ -148,7 +176,7 @@ function Home() {
                   NY Peeps Kitchen
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  The ultimate Korean Fried Chicken joint
+                  The ultimate Korean Fried Chicken joint.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -171,7 +199,7 @@ function Home() {
                   Josh Groban's Return to Sweeny Todd
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  How the long awaited return of Josh Groban meets the iconic broadway musical
+                  How the long awaited return of Josh Groban meets the iconic broadway musical.
                 </Typography>
               </CardContent>
               <CardActions>
@@ -194,7 +222,7 @@ function Home() {
                   Hangawi Korean Festival 2023
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Celebrate the vibrant community spirit of Chuseok at a curated pop-up market showcasing Korean American arts, crafts, culture, and more!
+                  Celebrate the vibrant community spirit of Chuseok at a curated pop-up market!
                 </Typography>
               </CardContent>
               <CardActions>
@@ -206,6 +234,18 @@ function Home() {
            
         </Grid>
       </Container>
+
+      {/* ****************************** ABOUT THE AUTHOR ****************************** */}
+<Box sx={styles.authorBox}>
+    <Card className={styles.authorCard} sx={{maxWidth: 500, height: 200}}>
+      <CardContent>
+        <Typography sx={styles.authorTitle} variant="h5">"New York is not a city. It’s a world."</Typography>
+        <Divider/>
+        <Typography sx={styles.authorText}>There is so much to see in New York City! Its bustling streets are a whirlwind of activity, and there are world-famous sites around every corner. You could spend a lifetime in New York City and still never fully see it all. So, here is just the first step to getting to know the greatest city in the world. </Typography>
+      </CardContent>
+    </Card>
+</Box>
+
     </div>
   );
 }
