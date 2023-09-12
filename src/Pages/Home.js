@@ -203,7 +203,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href="/featured/sweenyTodd">Learn More</Button>
+                <Button size="small" href="/featured/sweeneyTodd">Learn More</Button>
               </CardActions>
             </Card>
             
@@ -215,7 +215,7 @@ function Home() {
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
                 image="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1693001710745-2RPHPHOOR0E12V0KOQ5F/NY_Press+FInal-01.png?format=2500w"
-                title="sweeny-todd"
+                title="sweeney-todd"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">

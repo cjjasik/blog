@@ -23,7 +23,7 @@ function Navbar () {
     return(
         <>
 
-        <AppBar position="static" sx={styles.myAppBar}>
+        <AppBar position="sticky" elevation={0} sx={styles.myAppBar}>
         <Toolbar>
           <Link href='/'variant="h6" underline="none" color="inherit" sx={{ flexGrow: 1 }}>
             HUNGRY <span style={{color: "darkred"}}>in</span> MANHATTAN

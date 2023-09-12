@@ -2,27 +2,27 @@ const featureData = {
 
     // DEAD RABBIT IRISH PUB
     deadRabbit: {
-        image: "https://images.squarespace-cdn.com/content/v1/6231ff6bf0d49978468462a8/1663091506899-Q8L6BQ9EW3XEPJ3HE19T/TDR_0822_LizClayman_006.jpg",
+        image: "https://images.squarespace-cdn.com/content/v1/6231ff6bf0d49978468462a8/3c7f94a6-c3f2-4d1e-aecb-2a1325a13dd7/DR_051922_LizClayman_976.jpg",
         name: "Dead Rabbit Irish Pub",
-        type: "Pub Fare",
+        type: "Pub Fare, Irish",
         location: "30 Water St, New York, NY",
         description: "In a five-story, 19th-century townhouse, The Dead Rabbit offers three distinctly different dining and drinking experiences: The Taproom, The Parlor, and the Occasional Room. It’s a concept that works, and the bar remain the most awarded pub in the world. In the Taproom, craic reigns supreme. In the Parlor, cocktails are king, and in The Occasional Room, tavern traditions take center stage. The Dead Rabbit isn’t just the best of both worlds, it’s the best of all worlds."        
     },
 
     // RUBIROSA
     rubirosa:{
-        image: "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/afb43f54-1603-49fd-b695-f2eb5cf27937.28",
+        image: "https://media.cntraveler.com/photos/5d7fe81d4875770008344db0/16:9/w_2560,c_limit/00-nyc-rubirosa-pizza-2019-EA__6744.jpg",
         name: "Rubirosa Ristorante",
-        type: "Italian",
+        type: "Italian, Pizza",
         location: "235 Mulberry St, New York, NY",
-        description: "Rubirosa is a neighborhood family operated Italian-American restaurant and pizzeria founded in 2009 by AJ Pappalardo. AJ's father, Giuseppe Pappalardo founded the Staten Island institution, Joe and Pat's.  AJ opened Rubirosa to create an institution of his own In Manhattan.  AJ was inspired by the family's 60+ year signature pizza recipe to create our pizzas served at Rubirosa. In addition to our famous pizza, we proudly offer Italian-American classics featuring a wide array of pastas made fresh in-house daily. Rubirosa is located in the heart of Nolita and its clientele bridges the gap between the old and new neighborhood regulars.  Rubirosa's homey and comfortable atmosphere welcomes every occasion, from family-style group dining to an aperitivo and antipasti at our cozy bar."  
+        description: "Rubirosa is a neighborhood family operated Italian-American restaurant and pizzeria founded in 2009 by AJ Pappalardo. AJ was inspired by the family's 60+ year signature pizza recipe to create our pizzas served at Rubirosa. In addition to our famous pizza, we proudly offer Italian-American classics featuring a wide array of pastas made fresh in-house daily. Rubirosa is located in the heart of Nolita and its clientele bridges the gap between the old and new neighborhood regulars.  Rubirosa's homey and comfortable atmosphere welcomes every occasion, from family-style group dining to an aperitivo and antipasti at our cozy bar."  
     },
 
     // GRACE STREET
     graceStreet: {
-        image: "https://media-cdn.tripadvisor.com/media/photo-s/1b/01/f3/3e/nyc-s-1st-milk-tea-boba.jpg",
+        image: "https://images.squarespace-cdn.com/content/v1/587aec09e6f2e1f8d795b973/1580165448279-5LXSE5K37EMQL1F1JAE7/Grace+Street+-+Boba+Milk+Teas.jpg?format=2500w",
         name: "Grace Street Coffee & Desserts",
-        type: "Korean Desserts",
+        type: "Korean Desserts, Coffee",
         location: "17 W 32nd St, New York, NY",
         description: "Contemporary coffeehouse offering Asian donuts, waffles & matcha lattes, plus tea & espresso drinks."  
     },
@@ -38,7 +38,7 @@ const featureData = {
 
     // SWEENEY TODD
     sweeneyTodd: {
-        image: "https://static01.nyt.com/images/2023/03/26/multimedia/26sweeney-2-vmcg/26sweeney-2-vmcg-superJumbo.jpg?quality=75&auto=webp",
+        image: "https://people.com/thmb/ZEZjUhG8zyDI4JqvZS_jzAoGguc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/sweeney-todd-022223-1-915c490c082648eeb4ccf12aa9f90f75.jpg",
         name: "Sweeney Todd",
         type: "Broadway Musical",
         location: "Lunt-Fontanne Theatre 205 W 46th St, New York, NY",
