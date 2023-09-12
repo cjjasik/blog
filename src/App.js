@@ -7,6 +7,7 @@ import Activities from "./Pages/Activities";
 import Hotels from "./Pages/Hotels";
 import Flights from "./Pages/Flights";
 import theme from './theme';
+import Featured from "./Pages/Featured";
 
 function App() {
 
@@ -60,6 +61,7 @@ function App() {
             <Route path="/activities" element={<Activities />}></Route>
             <Route path="/hotels" element={<Hotels />}></Route>
             <Route path="/flights" element={<Flights />}></Route>
+            <Route path="/featured/:name" element={<Featured/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -113,7 +113,7 @@ function Home() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+              <Button size="small" href="/featured/deadRabbit">Learn More</Button>
             </CardActions>
           </Card>          
           </Grid>
@@ -135,7 +135,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small" href="/featured/rubirosa">Learn More</Button>
               </CardActions>
             </Card> 
           </Grid>
@@ -157,7 +157,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small" href="/featured/graceStreet">Learn More</Button>
               </CardActions>
             </Card> 
             
@@ -180,7 +180,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small" href="/featured/nyPeeps">Learn More</Button>
               </CardActions>
             </Card>
             
@@ -192,18 +192,18 @@ function Home() {
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
                 image="https://sweeneytoddbroadway.com/wp-content/uploads/2022/12/tw.png"
-                title="sweeny-todd"
+                title="sweeney-todd"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Josh Groban's Return to Sweeny Todd
+                  Josh Groban's Return to Sweeney Todd
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   How the long awaited return of Josh Groban meets the iconic broadway musical.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small" href="/featured/sweenyTodd">Learn More</Button>
               </CardActions>
             </Card>
             
@@ -226,7 +226,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small" href="/featured/hangawi">Learn More</Button>
               </CardActions>
             </Card>
             
@@ -241,7 +241,7 @@ function Home() {
       <CardContent>
         <Typography sx={styles.authorTitle} variant="h5">"New York is not a city. It’s a world."</Typography>
         <Divider/>
-        <Typography sx={styles.authorText}>There is so much to see in New York City! Its bustling streets are a whirlwind of activity, and there are world-famous sites around every corner. You could spend a lifetime in New York City and still never fully see it all. So, here is just the first step to getting to know the greatest city in the world. </Typography>
+        <Typography sx={styles.authorText}>From the bustling streets to the history around every corner, New York City is truly a masterpiece. You could spend a lifetime in New York City and still never fully see it all. So, here is just the first step to getting to know the greatest city in the world. </Typography>
       </CardContent>
     </Card>
 </Box>
