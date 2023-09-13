@@ -27,6 +27,7 @@ function Activities () {
             fontSize: "5rem",
             marginBottom: 5      
           },
+          
           pageDescription: {
             textAlign: 'center',
             marginTop: "30px",

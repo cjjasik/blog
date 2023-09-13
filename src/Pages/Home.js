@@ -168,19 +168,19 @@ function Home() {
             <Card className={styles.card} sx={{ maxWidth: 345, height: 345 }}>
               <CardMedia className={styles.media}
                 sx={{ height: 140 }}
-                image="https://d1ralsognjng37.cloudfront.net/11148194-5742-4297-9cd9-87e78749b879.webp"
-                title="ny-peeps"
+                image="https://media.cntraveler.com/photos/58599e53857eae6855ec5a5d/16:9/w_2560,c_limit/best-restaurants-NYC-lilia-2016.jpg"
+                title="lilia"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  NY Peeps Kitchen
+                  Lilia
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  The ultimate Korean Fried Chicken joint.
+                  In a redone auto-body shop, this Italian place offers wood-fired Italian fare & housemade pastas.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href="/featured/nyPeeps">Learn More</Button>
+                <Button size="small" href="/featured/lilia">Learn More</Button>
               </CardActions>
             </Card>
             

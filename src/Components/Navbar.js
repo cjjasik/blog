@@ -2,6 +2,7 @@ import * as React from 'react';
 import Link from '@mui/material/Link';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
+import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
@@ -23,7 +24,7 @@ function Navbar () {
     return(
         <>
 
-        <AppBar position="sticky" elevation={0} sx={styles.myAppBar}>
+        <AppBar position="sticky" sx={styles.myAppBar}>
         <Toolbar>
           <Link href='/'variant="h6" underline="none" color="inherit" sx={{ flexGrow: 1 }}>
             HUNGRY <span style={{color: "darkred"}}>in</span> MANHATTAN
