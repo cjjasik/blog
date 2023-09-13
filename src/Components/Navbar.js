@@ -2,9 +2,9 @@ import * as React from 'react';
 import Link from '@mui/material/Link';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
+import searchOptions from '../data/searchOptions';
 
 
 function Navbar () {
@@ -18,7 +18,16 @@ function Navbar () {
         navLinks: {
             marginLeft: '50px',
             marginRight: '50px',
+        },
+        search: {
+          marginLeft: '50px',
+          marginRight: '50px',
+          width: "125px",
         }
+    }
+
+    const onSearchChange = (event, value) => {
+      window.location.replace(value.url)
     }
 
     return(
@@ -34,6 +43,12 @@ function Navbar () {
             <Link href='/activities' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title'><strong>ACTIVITIES</strong></p></Link>
             <Link href='/hotels' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title'><strong>HOTELS</strong></p></Link>
             <Link href='/flights' underline="none" color="inherit" sx={styles.navLinks}><p className='tab-title'><strong>FLIGHTS</strong></p></Link>
+            <Autocomplete 
+              sx={styles.search}
+              options={searchOptions}
+              renderInput={(params) => <TextField {...params} label="Search" />}
+              onChange={onSearchChange}  
+            />
         </Toolbar>
       </AppBar>
     
