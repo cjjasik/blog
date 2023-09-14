@@ -8,14 +8,14 @@ const attractionData = {
       costCategory: "$",
       district: "Little Italy",
       hours: "September 14-24, 2023",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/547imzgwJqQ2nHK.png",
     },
   
     friendsExperience: {
       image: "https://media.timeout.com/images/105685116/750/422/image.jpg",
       name: "The FRIENDS Experience: The One in New York",
       type: "Tour, Experience, Nostalgic",
-      website: "https://nyc.friendstheexperience.com/?utm_source=google&utm_medium=localcards&utm_campaign=110671_nyc",
+      website: "https://nyc.friendstheexperience.com",
       description: "Immerse yourself in the world of FRIENDS™ like never before with interactive set recreations, props and costumes, photo ops and exclusive merchandise. There’s no better place to be an unapologetic FRIENDS™ fan!",
       costCategory: "$$-$$$",
       district: "Flatiron",
@@ -32,7 +32,7 @@ const attractionData = {
       costCategory: "$$ - $$$",
       district: "Midtown",
       hours: "Monday - Sunday (9am - 1am)",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/9ufTcteXEh5GEHK.png",
     },
   
     edge: {
@@ -44,7 +44,7 @@ const attractionData = {
       costCategory: "$ - $$$",
       district: "Hudson Yards",
       hours: "Monday - Sunday (10am - 10pm)",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/3FWJpcrvoPvNriT.png",
     },
   
     strand: {
@@ -56,7 +56,7 @@ const attractionData = {
       costCategory: "$ - $$",
       district: "Upper West Side, Union Square",
       hours: "Monday - Sunday (10am - 8pm)",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/7WPjMNXjSUWZtB6.png",
     },
   
     wicked: {
@@ -68,7 +68,7 @@ const attractionData = {
       costCategory: "$$-$$$$",
       district: "Times Square, Broadway",
       hours: "Check the website for specific performance days and times.",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/AfEEFmvrCdJ7hNn.png",
     },
   
       hamilton: {
@@ -80,7 +80,7 @@ const attractionData = {
       costCategory: "$$-$$$$",
       district: "Times Square, Broadway",
       hours: "Check the website for specific performance days and times.",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/BPb5iUGmR2zgeJy.png",
     },
   
     brooklynBridge: {
@@ -92,7 +92,7 @@ const attractionData = {
       costCategory: "Free",
       district: "Brooklyn",
       hours: "The bridge is available to walk across at various hours!",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/5JbC9q3GcNH863t.png",
     },
   
     cauldron: {
@@ -104,7 +104,7 @@ const attractionData = {
       costCategory: "$$-$$$",
       district: "Financial District, Flatiron",
       hours: "Monday (Closed)  |  Tuesday (4pm - 12am)  |  Wednesday (2pm - 12am)  |  Thursday (2pm - 1am)  |  Friday (2pm - 2am)  |  Saturday (12pm - 2am)  |  Sunday (11:30am - 10pm)",
-      mapImage: "",
+      mapImage: "https://screenshot.googleplex.com/8ugkQXNTdcAs3gt.png",
     },
   
   }

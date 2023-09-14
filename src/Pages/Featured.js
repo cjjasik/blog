@@ -21,10 +21,6 @@ function Featured () {
 
 
     const styles = {
-        
-        backButton: {
-            paddingTop: "500px",
-        },
 
         briefOuterBox: {
             backgroundColor: "#e9be66",
@@ -79,12 +75,6 @@ function Featured () {
             marginTop: "20px"
         },
 
-        pageDescription: {
-            textAlign: 'center',
-            marginTop: "10px",
-            marginBottom: "10px",
-        },
-
         pointContainer: {
             marginLeft: "75px",
             marginRight: "75px"
@@ -96,11 +86,11 @@ function Featured () {
             textAlign: 'center',
         },
 
-        // ********************************************* THIS IS NOT WORKING *********************************************
-        locationSection: {
-            alignItems: "center",
+        center: {
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: "center"
         }
-
 
     }
 
@@ -113,7 +103,7 @@ function Featured () {
             <Grid container sx={styles.featureContainer}>
                 {/* ********** IMAGE (LEFT)********** */}
                 <Grid item md={6}>
-                    <img src={data.image} style={styles.featureImage} height="450px" width="90%"/>
+                    <img alt={data.name} src={data.image} style={styles.featureImage} height="450px" width="90%"/>
                 </Grid>
                 {/* ********** DESCRIPTION (RIGHT) ********** */}
                 <Grid item md={6} sx={styles.featureDescription}>
@@ -137,9 +127,9 @@ function Featured () {
                             <Grid container sx={styles.pointContainer}>
 
                                 <Grid item md={4}>
-                                    <img className="item-image" src={data.mapImage} style={{ height: 200, width: 350 }}/>
+                                    <img alt="Google maps" className="item-image" src={data.mapImage} style={{ height: 200, width: 350 }}/>
                                 </Grid>
-                                <Grid item md={8} sx={styles.locationSection}>
+                                <Grid item md={8} sx={styles.center}>
                                     <Typography variant="h6"><strong>LOCATION 📍 </strong></Typography>
                                     <Typography>{data.district}</Typography>
                                     <Typography>{data.location}   <strong>|     </strong>   {data.district}</Typography>
@@ -155,9 +145,9 @@ function Featured () {
                             <Grid container sx={styles.pointContainer}>
 
                                 <Grid item md={4}>
-                                    <img className="item-image" src={data.point2Image} style={{ height: 200, width: 350 }}/>
+                                    <img alt="Don't miss out!" className="item-image" src={data.point2Image} style={{ height: 200, width: 350 }}/>
                                 </Grid>
-                                <Grid item md={8}>
+                                <Grid item md={8} sx={styles.center}>
                                     <Typography variant="h6"><strong>DON'T MISS OUT ON... </strong></Typography>
                                     <Typography><strong>No. 1:</strong> {data.no1}</Typography>
                                     <Typography><strong>No. 2:</strong> {data.no2}</Typography>
@@ -175,9 +165,9 @@ function Featured () {
                             <Grid container sx={styles.pointContainer}>
 
                                 <Grid item md={4}>
-                                    <img className="item-image" src={data.point3Image} style={{ height: 200, width: 350 }}/>
+                                    <img alt="What makes it special?" className="item-image" src={data.point3Image} style={{ height: 200, width: 350 }}/>
                                 </Grid>
-                                <Grid item md={8}>
+                                <Grid item md={8} sx={styles.center}>
                                     <Typography variant="h6"><strong>WHAT MAKES IT SPECIAL? </strong></Typography>
                                     <Typography><strong>What exactly makes it special:</strong> {data.special}</Typography>
                                     <Typography><strong>Final Thoughts:</strong> {data.other}</Typography>
@@ -194,9 +184,9 @@ function Featured () {
                             <Grid container sx={styles.pointContainer}>
 
                                 <Grid item md={4}>
-                                    <img className="item-image" src={data.point4Image} style={{ height: 200, width: 350 }}/>
+                                    <img alt="Is it worth it?" className="item-image" src={data.point4Image} style={{ height: 200, width: 350 }}/>
                                 </Grid>
-                                <Grid item md={8}>
+                                <Grid item md={8} sx={styles.center}>
                                     <Typography variant="h6"><strong>IS IT ACTUALLY WORTH THE HYPE? </strong></Typography>
                                     <Typography>{data.rating}</Typography>
                                 </Grid>

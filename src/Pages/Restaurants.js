@@ -15,7 +15,7 @@ function Restaurants () {
     const styles = {
 
         heroBox: {
-            backgroundImage: `url('https://robbreport.com/wp-content/uploads/2018/07/manhatta_dining-room_day_credit-emily-andrews_1.jpg')`,
+            backgroundImage: `url('https://media.timeout.com/images/105843714/image.jpg')`,
             height: '500px',
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -24,33 +24,34 @@ function Restaurants () {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: "#fff",
+            color: "black",
             fontSize: "5rem",
-            marginBottom: 5      
+            marginBottom: 5,      
           },
+
+        heroBoxText: {
+            backgroundColor: "rgba(255, 255, 255, 0.5)",
+            padding: "15px 30px",
+        },
 
         pageDescription: {
             textAlign: 'center',
             marginTop: "30px",
             marginBottom: "50px",
+            color: "#fff",
         },
 
         boxOuter: {
             marginLeft: "100px",
             marginRight: "100px",
             marginBottom: "50px",
-            borderColor: '#f5e1e1',
-            backgroundColor: '#fff7f7',
+            borderColor: '#3f612e',
+            backgroundColor: '#5a724e',
             borderStyle: 'solid',
             paddingBottom: "50px",
             paddingTop: "20px",
             paddingRight: '20px',
             paddingLeft: '20px',
-            alignItems: "center",
-        },
-
-        boxOptions: {
-            backgroundCOlor: 'white',
             alignItems: "center",
         },
 
@@ -94,7 +95,9 @@ function Restaurants () {
         <>
             <Navbar/>
 {/* ****************************** MAIN TITLE ****************************** */}
-            <Box sx={styles.heroBox} style={{color: "black"}}>Restaurants  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px", textAlight: "center"}}> in</span>  Manhattan</Box>
+            <Box sx={styles.heroBox}>
+                <Box sx={styles.heroBoxText}>Restaurants  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px", textAlight: "center"}}> in</span>  Manhattan</Box>
+            </Box>
 
             <Box sx={styles.boxOuter}>
                 <Typography sx={styles.pageDescription} variant="h4"><strong>“LIFE IS UNCERTAIN. EAT DESSERT <span style={{color: "darkred"}}> FIRST</span>.” – Ernestine Ulmer</strong></Typography>

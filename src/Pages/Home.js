@@ -33,6 +33,11 @@ function Home() {
       marginBottom: 3      
     },
 
+    heroBoxText: {
+      backgroundColor: "rgba(255, 255, 255, 0.2)",
+      padding: "15px 30px",
+  },
+
     articleContainer: {
       paddingTop: theme.spacing(3),
       marginBottom: 10
@@ -78,7 +83,17 @@ function Home() {
 
     authorTitle: {
       textAlign: "center"
+    },
+
+    learnMoreButton: {
+      color: "black",
+      '&:hover': {
+        borderColor: "black",
+        borderStyle: "solid 2px",
+        backgroundColor: "lightgray"
     }
+    }
+
   }
   
   return (
@@ -86,7 +101,9 @@ function Home() {
       <Navbar/>
 
 {/* ****************************** MAIN TITLE ****************************** */}
-<Box sx={styles.heroBox}>HUNGRY  <span style={{color: "darkred", marginLeft: "130px", marginRight: "100px"}}> in</span>  MANHATTAN</Box>
+<Box sx={styles.heroBox}>
+  <Box sx={styles.heroBoxText}> HUNGRY  <span style={{color: "darkred", marginLeft: "130px", marginRight: "100px"}}> in</span>  MANHATTAN</Box>
+  </Box>
 
 {/* ****************************** FEATURED ****************************** */}
       <Container sx={styles.articleContainer} maxWidth="false">
@@ -113,7 +130,7 @@ function Home() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href="/featured/deadRabbit">Learn More</Button>
+              <Button sx={styles.learnMoreButton} size="small" href="/featured/deadRabbit">Learn More</Button>
             </CardActions>
           </Card>          
           </Grid>
@@ -135,7 +152,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href="/featured/rubirosa">Learn More</Button>
+                <Button sx={styles.learnMoreButton}  size="small" href="/featured/rubirosa">Learn More</Button>
               </CardActions>
             </Card> 
           </Grid>
@@ -153,11 +170,11 @@ function Home() {
                   Grace Street Coffee & Desserts
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  A hidden gem in Koreatown has the best cheesecake in New York City!
+                  A hidden gem in Koreatown competing for the title of Best Cheesecake in New York City!
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href="/featured/graceStreet">Learn More</Button>
+                <Button sx={styles.learnMoreButton}  size="small" href="/featured/graceStreet">Learn More</Button>
               </CardActions>
             </Card> 
             
@@ -176,11 +193,11 @@ function Home() {
                   Lilia
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  In a redone auto-body shop, this Italian place offers wood-fired Italian fare & housemade pastas.
+                  In a redone auto-body shop, one of New York's most sought-after restaurants offers wood-fired Italian fare & housemade pastas.
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href="/featured/lilia">Learn More</Button>
+                <Button sx={styles.learnMoreButton} size="small" href="/featured/lilia">Learn More</Button>
               </CardActions>
             </Card>
             
@@ -203,7 +220,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href="/featured/sweeneyTodd">Learn More</Button>
+                <Button sx={styles.learnMoreButton} size="small" href="/featured/sweeneyTodd">Learn More</Button>
               </CardActions>
             </Card>
             
@@ -226,7 +243,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button size="small" href="/featured/hangawi">Learn More</Button>
+                <Button sx={styles.learnMoreButton} size="small" href="/featured/hangawi">Learn More</Button>
               </CardActions>
             </Card>
             

@@ -28,6 +28,11 @@ function Hotels () {
             marginBottom: 5      
           },
 
+          heroBoxText: {
+            backgroundColor: "rgba(255, 255, 255, 0.3)",
+            padding: "15px 30px",
+        },
+
         pageDescription: {
             textAlign: 'center',
             marginTop: "30px",
@@ -38,7 +43,7 @@ function Hotels () {
             marginLeft: "100px",
             marginRight: "100px",
             marginBottom: "50px",
-            backgroundColor: '#f5f1e7',
+            backgroundColor: '#eedcae',
             borderColor: '#fdf1d3',
             borderStyle: 'solid',
             paddingBottom: "50px",
@@ -47,15 +52,6 @@ function Hotels () {
             paddingLeft: '20px',
             alignItems: "center",
         },
-
-        boxOptions: {
-            backgroundCOlor: 'white',
-            alignItems: "center",
-        },
-
-        media: {
-            height: 240,
-          },
 
         foodType: {
             color: "grey",
@@ -74,7 +70,6 @@ function Hotels () {
 
         learnMore: {
             marginTop: "10px",
-            left: "70%",
             color: "black",
             borderColor: "black",
             '&:hover': {
@@ -83,20 +78,21 @@ function Hotels () {
             }
         },
 
-        foodTitle: {
-            marginBottom: "5px"
+        location: {
+            color: "grey",
+            marginBottom: "15px"
         }
-        
-        
-          
-        }
+              
+    }
 
         
     return(
         <>
             <Navbar/>
 {/* ****************************** MAIN TITLE ****************************** */}
-        <Box sx={styles.heroBox} style={{color: "black"}}>Hotels  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+        <Box sx={styles.heroBox} style={{color: "black"}}>
+            <Box sx={styles.heroBoxText}>Hotels  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+        </Box>
         
         <Box sx={styles.boxOuter}>
                 <Typography sx={styles.pageDescription} variant="h4"><strong>“SLEEPLESS NIGHTS & CITY <span style={{color: "darkred"}}> LIGHTS</span>.”</strong></Typography>
@@ -109,15 +105,10 @@ function Hotels () {
                                 </Grid>
                                 <Grid item md={8}>
                                     <Typography sx={styles.foodTitle} variant="h6"><strong>{hotelsData[key].name}</strong></Typography>
+                                    <Typography sx={styles.location}>{hotelsData[key].location}</Typography>
                                     <Typography>{hotelsData[key].description}</Typography>
-                                    <Grid container>
-                                        <Grid item md={6}>
-                                            <Typography sx={styles.foodType}>Price: {hotelsData[key].costCategory}</Typography>
-                                        </Grid>
-                                        <Grid item md={6}>
-                                            <Button sx={styles.learnMore} variant="outlined" href={hotelsData[key].website}>Book on Hotel Website</Button>
-                                        </Grid>
-                                    </Grid>
+                                    <Typography sx={styles.foodType}>Price: {hotelsData[key].costCategory}</Typography>
+                                    <Button sx={styles.learnMore} variant="outlined" href={hotelsData[key].website}>Book on Hotel Website</Button>
                                 </Grid>  
                             </Grid>
                         </ListItem>
@@ -132,6 +123,3 @@ function Hotels () {
 }
 
 export default Hotels;
-
-// HOTEL HERO IMAGE
-// https://hips.hearstapps.com/harpersbazaar/assets/16/21/1464292253-standard-high-line-hudson-studio-01.jpg

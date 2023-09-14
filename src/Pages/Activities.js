@@ -27,29 +27,30 @@ function Activities () {
             fontSize: "5rem",
             marginBottom: 5      
           },
+
+          heroBoxText: {
+            backgroundColor: "rgba(255, 255, 255, 0.3)",
+            padding: "15px 30px",
+        },
           
           pageDescription: {
             textAlign: 'center',
             marginTop: "30px",
             marginBottom: "50px",
+            color: "white",
         },
 
         boxOuter: {
             marginLeft: "100px",
             marginRight: "100px",
             marginBottom: "50px",
-            backgroundColor: '#eaeef5',
-            borderColor: '#dce3f1',
+            backgroundColor: '#7fa7e7',
+            borderColor: '#6a8fca',
             borderStyle: 'solid',
             paddingBottom: "50px",
             paddingTop: "20px",
             paddingRight: '20px',
             paddingLeft: '20px',
-            alignItems: "center",
-        },
-
-        boxOptions: {
-            backgroundCOlor: 'white',
             alignItems: "center",
         },
 
@@ -85,8 +86,8 @@ function Activities () {
 
         foodTitle: {
             marginBottom: "5px"
-        }
-        
+        },
+
         }
 
         
@@ -94,7 +95,9 @@ function Activities () {
         <>
             <Navbar/>
 {/* ****************************** MAIN TITLE ****************************** */}
-            <Box sx={styles.heroBox} style={{color: "white"}}>Activities  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+            <Box sx={styles.heroBox} style={{color: "white"}}>
+                <Box sx={styles.heroBoxText}>Activities  <span style={{color: "darkred", marginLeft: "35px", marginRight: "35px"}}> in</span>  Manhattan</Box>
+            </Box>
 
             <Box sx={styles.boxOuter}>
                 <Typography sx={styles.pageDescription} variant="h4"><strong>“NEW YORK IS NOT A PLACE. IT'S A <span style={{color: "darkred"}}> FEELING</span>."</strong></Typography>
